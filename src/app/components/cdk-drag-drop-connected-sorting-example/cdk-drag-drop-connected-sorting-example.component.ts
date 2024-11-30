@@ -6,6 +6,7 @@ import {
   CdkDrag,
   CdkDropList,
 } from '@angular/cdk/drag-drop';
+import { MenuPositionExample } from "../menu-position-example/menu-position-example.component";
 
 /**
  * @title Drag&Drop connected sorting
@@ -14,7 +15,7 @@ import {
   selector: 'cdk-drag-drop-connected-sorting-example',
   templateUrl: 'cdk-drag-drop-connected-sorting-example.component.html',
   styleUrl: 'cdk-drag-drop-connected-sorting-example.component.scss',
-  imports: [CdkDropList, CdkDrag],
+  imports: [CdkDropList, CdkDrag, MenuPositionExample],
   standalone: true
 })
 export class CdkDragDropConnectedSortingExample {

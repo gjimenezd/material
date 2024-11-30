@@ -1,4 +1,5 @@
-<div class="example-box" cdkDrag>
+<menu-position-example></menu-position-example>
+<!-- <div class="example-box" cdkDrag>
     Drag me around
 </div>
 <div class="example-box yellow" cdkDrag>
@@ -9,4 +10,12 @@
 </div>
 <div class="example-box green" cdkDrag>
     Drag me around
+</div> -->
+<label for="size">Tamaño</label>
+<input type="number" name="size" id="size" [value]="blockSize" (change)="changeSize()">
+<div>Coordinates:{{lastCoordinates.x}},{{lastCoordinates.y}}</div>
+<div class="container">
+
+    <div class="example-box" *ngFor="let item of uppercaseLetters" cdkDrag (dblclick)="copy($event)" [style.width.px]="blockSize" [style.height.px]="blockSize" [style.font-size.px]="blockSize*0.8" cdkDragBoundary=".container">{{item}}</div>
+
 </div>

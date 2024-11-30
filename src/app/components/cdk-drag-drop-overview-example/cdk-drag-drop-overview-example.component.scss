@@ -1,6 +1,10 @@
+body{
+    padding: 25px;
+}
+
 .example-box {
-    width: 200px;
-    height: 200px;
+    width: 30px;
+    height: 30px;
     border: solid 1px #ccc;
     color: rgba(255, 255, 255, 0.87);
     cursor: move;
@@ -34,4 +38,12 @@
 
 .green {
     background: green;
+}
+
+
+.container{
+    background-color: #ecebeb;
+    display: flex;
+    flex-wrap: wrap;
+    height: 1200px;
 }
